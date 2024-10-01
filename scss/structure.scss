@@ -1,0 +1,73 @@
+// Page reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $BG;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: $M;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.content {
+  width: 75%;
+}
+
+section {
+  min-height: 50%;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.back {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.back a {
+  color: white;
+  text-decoration: none;
+}
+
+.back a:hover {
+  color: $Red;
+}
+
+.red {
+  color: $Red;
+}
+
+// Fonts
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../css/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../css/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url(../css/fonts/Montserrat-Thin.ttf);
+}

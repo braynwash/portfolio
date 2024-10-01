@@ -1,0 +1,97 @@
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1500px;
+  font-family: $M;
+}
+
+.header {
+  font-size: 35px;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.projects .projectCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 275px;
+  margin-bottom: 75px;
+}
+
+.projects .projText {
+  width: 55%;
+  margin-left: 3%;
+}
+
+.projects .projText i {
+  color: $Red;
+  font-size: 27px;
+}
+
+.projects .projText i:hover {
+  color: white;
+}
+
+.projects .projImg {
+  background-color: $Red;
+  height: 100%;
+  width: 45%;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid $Red;
+}
+
+.projects h1 {
+  font-family: $MB;
+}
+
+.projRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects .fa-github {
+  margin-left: 10px;
+}
+
+.projects .skillList {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  color: rgb(130, 130, 130);
+}
+
+#keurig {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/keurig.png);
+}
+
+#nuvema {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/nuvema.png);
+}
+
+#greenwise {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/greenwise.jpg);
+}
+
+#jungle {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/jungle.png);
+}

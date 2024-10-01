@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: $M;
+}
+
+.about .aboutContain {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 350px;
+  margin-bottom: 75px;
+}
+
+.about .aboutText {
+  width: 65%;
+  margin-left: 5%;
+}
+
+.about .aboutText i {
+  color: $Red;
+  font-size: 27px;
+}
+
+.about .aboutText i:hover {
+  color: white;
+}
+
+.about .aboutText .accountLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.about .aboutImg {
+  height: 100%;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid $Red;
+  background-image: url(../assets/images/jeremy.jpg);
+}

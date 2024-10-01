@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  align-items: center;
+  height: 55%;
+  font-family: $MB;
+}
+
+.hero .heroText {
+  font-size: 35px;
+}
+
+.heroText h2 {
+  font-family: $MT;
+  font-size: 30px;
+}

@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(31, 28, 28);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.content {
+  width: 75%;
+}
+
+section {
+  min-height: 50%;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.back {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.back a {
+  color: white;
+  text-decoration: none;
+}
+
+.back a:hover {
+  color: rgb(179, 30, 30);
+}
+
+.red {
+  color: rgb(179, 30, 30);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../css/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../css/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url(../css/fonts/Montserrat-Thin.ttf);
+}
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: rgb(179, 30, 30);
+}
+
+nav .navLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+nav .contactBtn {
+  background-color: rgb(179, 30, 30);
+  padding: 8px;
+  margin-top: -8px;
+  border-radius: 25px;
+}
+
+nav .contactBtn:hover {
+  background-color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 55%;
+  font-family: "Montserrat Bold";
+}
+
+.hero .heroText {
+  font-size: 35px;
+}
+
+.heroText h2 {
+  font-family: "Montserrat Thin";
+  font-size: 30px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1500px;
+  font-family: "Montserrat";
+}
+
+.header {
+  font-size: 35px;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.projects .projectCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 275px;
+  margin-bottom: 75px;
+}
+
+.projects .projText {
+  width: 55%;
+  margin-left: 3%;
+}
+
+.projects .projText i {
+  color: rgb(179, 30, 30);
+  font-size: 27px;
+}
+
+.projects .projText i:hover {
+  color: white;
+}
+
+.projects .projImg {
+  background-color: rgb(179, 30, 30);
+  height: 100%;
+  width: 45%;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid rgb(179, 30, 30);
+}
+
+.projects h1 {
+  font-family: "Montserrat Bold";
+}
+
+.projRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects .fa-github {
+  margin-left: 10px;
+}
+
+.projects .skillList {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  color: rgb(130, 130, 130);
+}
+
+#keurig {
+  background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/keurig.png);
+}
+
+#nuvema {
+  background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/nuvema.png);
+}
+
+#greenwise {
+  background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/greenwise.jpg);
+}
+
+#jungle {
+  background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/jungle.png);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+
+.about .aboutContain {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 350px;
+  margin-bottom: 75px;
+}
+
+.about .aboutText {
+  width: 65%;
+  margin-left: 5%;
+}
+
+.about .aboutText i {
+  color: rgb(179, 30, 30);
+  font-size: 27px;
+}
+
+.about .aboutText i:hover {
+  color: white;
+}
+
+.about .aboutText .accountLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.about .aboutImg {
+  height: 100%;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid rgb(179, 30, 30);
+  background-image: url(../assets/images/jeremy.jpg);
+}
+
+.contact {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .formContainer form {
+  width: 70%;
+}
+
+.formContainer form label {
+  color: rgb(108, 108, 108);
+  font-size: 20px;
+  font-family: "Montserrat Bold";
+}
+
+.formContainer form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+  font-family: "Montserrat";
+  margin-bottom: 50px;
+  margin-top: 10px;
+  border: 3px solid rgb(108, 108, 108);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.formContainer form textarea {
+  width: 100%;
+  height: 200px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+  resize: vertical;
+  border: 3px solid rgb(108, 108, 108);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.formContainer form .submitCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.formContainer form .submit {
+  background-color: rgb(179, 30, 30);
+  border: none;
+  height: 40px;
+  font-family: "Montserrat Bold";
+  border-radius: 50px;
+  color: white;
+  width: 50%;
+}
+
+.formContainer form input:hover {
+  border: 3px solid rgb(179, 30, 30);
+}
+
+.formContainer form textarea:hover {
+  border: 3px solid rgb(179, 30, 30);
+}
+
+.formContainer form .submit:hover {
+  background-color: white;
+  color: rgb(179, 30, 30);
+  border-color: rgb(179, 30, 30);
+  cursor: pointer;
+}
+
+.formContainer form input:focus {
+  background-color: white;
+  color: black;
+  border: 3px solid rgb(179, 30, 30);
+}
+
+.formContainer form textarea:focus {
+  color: black;
+  background-color: white;
+  border: 3px solid rgb(179, 30, 30);
+}
+
+/*# sourceMappingURL=styles.css.map */

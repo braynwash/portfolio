@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <title>Jeremy's Portfolio</title>
+
+ <!-- Font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+ <link rel="stylesheet" href="css/styles.css">
+
+ </head>
+ <body>
+   <div class="content">
+      <nav id="top">
+         <div class="navLinks">
+           <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="/assets/Resume - Jeremy Black.pdf" target="_blank">Resume</a>
+            <a href="#contact" class="contactBtn">Connect</a> 
+         </div>
+      </nav>
+
+   <section class="hero" id="hero">
+      
+            <div class="heroText">
+               <h2>Hi! I'm Jeremy Black.</h2>
+               <h1>I build <div class="red" style="display: inline;">accessible, responsive</div>  web <br>solutions that put users first.</h1>
+            </div>
+      
+   </section>
+
+   <section class="projects" id="projects">
+
+      <h1 class="header">My Projects</h1>
+
+      <!-- Keurig -->
+      <div class="projectCard">
+         <div class="projImg" id="keurig"></div>
+         <div class="projText">
+            <h1 style="font-size: 30px;">Keurig Mock-Up</h1>
+            <p style="font-size: 20px;">Replicates the Keurig home and cart pages, focusing on front-end ecommerce features such as cart management and user sessions through Firebase. Includes dynamic cart updates (add/remove items, adjust quantities) and URL-based routing.
+            </p> 
+            <div class="skillList">
+               <p>jQuery</p>
+               <p>JSON</p>
+               <p>Firebase Auth</p>
+            </div>
+               <a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+               <a href="https://github.com/braynwash" target="_blank"><i class="fa-brands fa-github"></i></a>
+         </div>
+      </div>
+
+      <!-- Nuvema -->
+      <div class="projectCard">
+         <div class="projText" style="text-align: right;margin-right: 3%;">
+            <h1 style="font-size: 30px;">Nuvema Labs</h1>
+            <p style="font-size: 20px;">A Pokemon Black/White database made in collaboration with two others. Utilizes Object-Oriented PHP principles and allows users to create an account, save Pokemon to a "favorites" list, and add a custom Pokemon to the database.</p>
+            <div class="projRight">
+               <div class="skillList" >
+               <p>PHP</p>
+               <p>MySQL</p>
+               <p>Apache</p>
+            </div>
+            </div>
+            <a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/braynwash" target="_blank"><i class="fa-brands fa-github"></i></a>
+         </div>
+         <div class="projImg" id="nuvema"></div>
+      </div>
+
+      <!-- Greenwise -->
+      <div class="projectCard">
+         <div class="projImg" id="greenwise"></div>
+         <div class="projText">
+            <h1 style="font-size: 30px;">Greenwise Lawn Care</h1>
+            <p style="font-size: 20px;">A UI design made in Figma for a fictional lawn care company. Developed wireframes and conducted usability tests on users, documenting and adjusting the design based on feedback.</p> 
+            <div class="skillList" style="width: 300px;">
+               <p>User research</p>
+               <p>Wireframing</p>
+               <p>Figma</p>
+            </div>
+               <a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+         </div>
+      </div>
+
+      <!-- Jungle -->
+      <div class="projectCard">
+         <div class="projText" style="text-align: right;margin-right: 3%;">
+            <h1 style="font-size: 30px;">JungleCook</h1>
+            <p style="font-size: 20px;">A multi-page CRUD web application that allows verified users to create, edit, delete and save custom recipes. Uses Firebase to authenticate users and save sessions.</p>
+            <div class="projRight">
+               <div class="skillList" >
+               <p>jQuery</p>
+               <p>Sass</p>
+               <p>Firebase Auth</p>
+            </div>
+            </div>
+            <a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/braynwash" target="_blank"><i class="fa-brands fa-github"></i></a>
+         </div>
+         <div class="projImg" id="jungle"></div>
+      </div>
+
+   </section>
+
+   <section class="about" id="about">
+
+      <h1 class="header">About Me</h1>
+
+      <div class="aboutContain">
+         <div class="aboutImg"></div>
+         <div class="aboutText">
+            <h1 style="font-size: 30px;">Flawless Functionality for All</h1>
+            <p style="font-size: 20px;">My passion for web development first began in middle school when I experimented with HTML and CSS for a digital blog; since then, I've gone to enhance my skills, utilizing the latest development practices from user-centric designs. I believe in creating <span class="red">seamless</span> experiences for <span class="red" style="font-family: 'Montserrat Bold';">everyone</span>, focusing on accessibility, performance, and dynamic interactions.</p> 
+               <div class="accountLinks">
+                     <a href="https://www.linkedin.com/in/jereblack/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/braynwash" target="_blank"><i class="fa-brands fa-github"></i></a>
+                     <a href="mailto:jeremyblack1028@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+               </div>
+         </div>
+      </div>
+
+   </section>
+
+   <section class="contact" id="contact">
+
+      <h1 class="header">Let's Connect!</h1>
+
+      <div class="formContainer">
+         <form action="https://formspree.io/f/xovagyyp" method="POST">
+
+            <label for="fName">Full Name</label>
+            <input type="text" name="fName">
+
+            <label for="name">E-mail</label>
+            <input type="email" name="email">
+
+            <label for="msg">Message</label>
+            <textarea name="msg" id="msg"></textarea>
+
+            <div class="submitCenter">
+               <input type="submit" class="submit">
+            </div>
+         </form>
+      </div>
+
+   </section>
+
+   <div class="back">
+      <a href="#top">Back to Top</a>
+   </div>
+   
+   
+   </div>   
+ </body>
+</html>
