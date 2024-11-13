@@ -35,19 +35,30 @@ section {
   margin-bottom: 25px;
 }
 
-.back {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 50px;
-  padding-bottom: 100px;
+#backToTopBtn {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 25px 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(179, 30, 30);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
-.back a {
-  color: white;
-  text-decoration: none;
+#backToTopBtn.show {
+  visibility: visible;
+  opacity: 1;
 }
 
-.back a:hover {
+#backToTopBtn:hover {
+  background-color: #fff;
   color: rgb(179, 30, 30);
 }
 
@@ -245,7 +256,7 @@ nav .contactBtn:hover {
 }
 
 .contact {
-  min-height: 700px;
+  min-height: 900px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -314,10 +325,12 @@ nav .contactBtn:hover {
 
 .formContainer form input:hover {
   border: 3px solid rgb(179, 30, 30);
+  cursor: pointer;
 }
 
 .formContainer form textarea:hover {
   border: 3px solid rgb(179, 30, 30);
+  cursor: pointer;
 }
 
 .formContainer form .submit:hover {

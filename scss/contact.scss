@@ -1,5 +1,5 @@
 .contact {
-  min-height: 700px;
+  min-height: 900px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -68,10 +68,12 @@
 
 .formContainer form input:hover {
   border: 3px solid $Red;
+  cursor: pointer;
 }
 
 .formContainer form textarea:hover {
   border: 3px solid $Red;
+  cursor: pointer;
 }
 
 .formContainer form .submit:hover {

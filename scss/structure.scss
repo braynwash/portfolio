@@ -35,19 +35,31 @@ section {
   margin-bottom: 25px;
 }
 
-.back {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 50px;
-  padding-bottom: 100px;
+#backToTopBtn {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 25px 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: $Red;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
-.back a {
-  color: white;
-  text-decoration: none;
+#backToTopBtn.show {
+  visibility: visible;
+  opacity: 1;
 }
 
-.back a:hover {
+#backToTopBtn:hover {
+  background-color: #fff;
   color: $Red;
 }
 
