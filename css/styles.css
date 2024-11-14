@@ -41,7 +41,7 @@ section {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  padding: 25px 25px;
+  padding: 24px 25px;
   font-size: 16px;
   color: #fff;
   background-color: rgb(179, 30, 30);
@@ -90,10 +90,12 @@ nav a {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 nav a:hover {
   color: rgb(179, 30, 30);
+  transform: scale(1.1);
 }
 
 nav .navLinks {
@@ -160,10 +162,12 @@ nav .contactBtn:hover {
 .projects .projText i {
   color: rgb(179, 30, 30);
   font-size: 27px;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .projects .projText i:hover {
   color: white;
+  transform: scale(1.1);
 }
 
 .projects .projImg {
@@ -234,10 +238,12 @@ nav .contactBtn:hover {
 .about .aboutText i {
   color: rgb(179, 30, 30);
   font-size: 27px;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .about .aboutText i:hover {
   color: white;
+  transform: scale(1.1);
 }
 
 .about .aboutText .accountLinks {
@@ -253,6 +259,11 @@ nav .contactBtn:hover {
   background-size: cover;
   border: 5px solid rgb(179, 30, 30);
   background-image: url(../assets/images/jeremy.jpg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.about .aboutImg:hover {
+  transform: scale(1.05);
 }
 
 .contact {
@@ -290,6 +301,7 @@ nav .contactBtn:hover {
   margin-bottom: 50px;
   margin-top: 10px;
   border: 3px solid rgb(108, 108, 108);
+  transition: border 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -303,6 +315,7 @@ nav .contactBtn:hover {
   margin-top: 10px;
   resize: vertical;
   border: 3px solid rgb(108, 108, 108);
+  transition: border 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -321,6 +334,7 @@ nav .contactBtn:hover {
   border-radius: 50px;
   color: white;
   width: 50%;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .formContainer form input:hover {
@@ -337,6 +351,7 @@ nav .contactBtn:hover {
   background-color: white;
   color: rgb(179, 30, 30);
   border-color: rgb(179, 30, 30);
+  transform: scale(1.1);
   cursor: pointer;
 }
 

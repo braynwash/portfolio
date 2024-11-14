@@ -29,10 +29,12 @@
 .projects .projText i {
   color: $Red;
   font-size: 27px;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .projects .projText i:hover {
   color: white;
+  transform: scale(1.1);
 }
 
 .projects .projImg {

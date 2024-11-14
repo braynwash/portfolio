@@ -33,6 +33,7 @@
   margin-bottom: 50px;
   margin-top: 10px;
   border: 3px solid rgb(108, 108, 108);
+  transition: border 0.2s ease-in-out;
   background-color: #ffffff00;
 }
 
@@ -46,6 +47,7 @@
   margin-top: 10px;
   resize: vertical;
   border: 3px solid rgb(108, 108, 108);
+  transition: border 0.2s ease-in-out;
   background-color: #ffffff00;
 }
 
@@ -64,6 +66,7 @@
   border-radius: 50px;
   color: white;
   width: 50%;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .formContainer form input:hover {
@@ -80,6 +83,7 @@
   background-color: white;
   color: $Red;
   border-color: $Red;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
