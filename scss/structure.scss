@@ -25,6 +25,10 @@ p {
   margin-bottom: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .content {
   width: 75%;
 }
