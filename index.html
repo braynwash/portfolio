@@ -134,20 +134,20 @@
       <div class="formContainer">
          <form action="https://formspree.io/f/xovagyyp" method="POST">
 
-            <label for="fName">Full Name</label>
-            <input type="text" name="fName">
-            <p></p>
+            <label for="name">Full Name</label>
+            <input type="text" name="name">
+            <p id="nameError"></p>
 
             <label for="name">E-mail</label>
             <input type="email" name="email">
-            <p></p>
+            <p id="emailError"></p>
 
             <label for="msg">Message</label>
             <textarea name="msg" id="msg"></textarea>
-            <p></p>
+            <p id="msgError"></p>
 
             <div class="submitCenter">
-               <input type="submit" class="submit">
+               <input type="submit" class="submit" id="submit">
             </div>
          </form>
       </div>
