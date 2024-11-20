@@ -31,6 +31,12 @@ html {
 
 .content {
   width: 75%;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.content.fade-in {
+  opacity: 1;
 }
 
 section {
@@ -64,6 +70,14 @@ section {
 #backToTopBtn:hover {
   background-color: #fff;
   color: rgb(179, 30, 30);
+}
+
+.hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover:hover {
+  transform: scale(1.05);
 }
 
 .red {

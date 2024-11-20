@@ -17,6 +17,12 @@ document.getElementById("backToTopBtn").onclick = function () {
   });
 };
 
+//Page fades in on reload
+document.addEventListener("DOMContentLoaded", () => {
+  const content = document.querySelector(".content");
+  content.classList.add("fade-in");
+});
+
 // //Form validation for when i use an actual form thing
 
 // function validateForm() {
