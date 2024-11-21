@@ -349,6 +349,14 @@ nav .contactBtn:hover {
     margin-top: 10px;
   }
 }
+@media (max-width: 480px) {
+  .projects {
+    height: 2500px;
+  }
+  .projectCard {
+    flex-direction: column;
+  }
+}
 /* Base layout */
 .about {
   display: flex;
