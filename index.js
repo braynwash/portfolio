@@ -23,6 +23,71 @@ document.addEventListener("DOMContentLoaded", () => {
   content.classList.add("fade-in");
 });
 
+function adjustProjectImages() {
+  const screenWidth = window.innerWidth;
+
+  // Select all project cards
+  const projectCards = document.querySelectorAll(".projectCard");
+
+  projectCards.forEach((card) => {
+    const resizeDiv = card.querySelector(".resize");
+    const projImgDiv = card.querySelector(".projImg.hover:not(.resize)");
+
+    if (screenWidth <= 480) {
+      // Move classes and ID to resizeDiv if not already applied
+      if (resizeDiv && projImgDiv && !resizeDiv.classList.contains("projImg")) {
+        // Add classes and ID to resizeDiv
+        resizeDiv.classList.add("projImg", "hover");
+        resizeDiv.id = projImgDiv.id;
+
+        // Remove classes and ID from projImgDiv
+        projImgDiv.classList.remove("projImg", "hover");
+        projImgDiv.removeAttribute("id");
+      }
+    } else {
+      // Revert classes and ID back to projImgDiv
+      if (
+        resizeDiv &&
+        projImgDiv &&
+        !projImgDiv.classList.contains("projImg")
+      ) {
+        // Add classes and ID back to projImgDiv
+        projImgDiv.classList.add("projImg", "hover");
+        projImgDiv.id = resizeDiv.id;
+
+        // Remove classes and ID from resizeDiv
+        resizeDiv.classList.remove("projImg", "hover");
+        resizeDiv.removeAttribute("id");
+      }
+    }
+  });
+}
+
+// Add listener to track screen resize
+function trackScreenResize() {
+  let lastScreenWidth = window.innerWidth;
+
+  window.addEventListener("resize", () => {
+    const currentScreenWidth = window.innerWidth;
+
+    // Only adjust when crossing the 768px threshold
+    if (
+      (lastScreenWidth <= 768 && currentScreenWidth > 768) ||
+      (lastScreenWidth > 768 && currentScreenWidth <= 768)
+    ) {
+      adjustProjectImages();
+    }
+
+    lastScreenWidth = currentScreenWidth;
+  });
+}
+
+// Initialize adjustments on page load
+window.addEventListener("load", () => {
+  adjustProjectImages();
+  trackScreenResize();
+});
+
 // //Form validation for when i use an actual form thing
 
 // function validateForm() {

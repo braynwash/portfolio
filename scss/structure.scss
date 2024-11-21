@@ -74,11 +74,46 @@ section {
 }
 
 .hover {
-  transition: transform 0.2s ease-in-out;
+  position: relative; /* Ensures proper positioning for overlays */
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+  display: inline-block;
+  overflow: hidden; /* Prevents the gradient from going outside the image bounds */
+}
+
+.hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 1; /* Sits above the image but behind text if any */
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none; /* Ensures the gradient doesn’t block hover events */
+}
+
+.hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: filter 0.2s ease-in-out;
 }
 
 .hover:hover {
   transform: scale(1.05);
+}
+
+.hover:hover::before {
+  opacity: 0; /* Removes the gradient effect when hovering */
+}
+
+.hover:hover img {
+  filter: brightness(1.2); /* Lightens the image */
 }
 
 .red {
@@ -100,4 +135,10 @@ section {
 @font-face {
   font-family: "Montserrat Thin";
   src: url(../css/fonts/Montserrat-Thin.ttf);
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
 }

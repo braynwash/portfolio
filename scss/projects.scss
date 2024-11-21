@@ -26,6 +26,14 @@
   margin-left: 3%;
 }
 
+.projHeader {
+  font-size: 30px;
+}
+
+.projInfo {
+  font-size: 20px;
+}
+
 .projects .projText i {
   color: $Red;
   font-size: 27px;
@@ -96,4 +104,38 @@
       rgba(78, 78, 78, 0.313)
     ),
     url(../assets/images/jungle.png);
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 30px;
+  }
+  .projects {
+    height: 1700px;
+  }
+  .projects .projectCard {
+    align-items: center;
+    height: auto;
+    margin-bottom: 75px;
+  }
+  .projHeader {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .projInfo {
+    font-size: 18px;
+  }
+  .projects .projImg {
+    width: 90%;
+    height: 300px;
+    border-width: 3px;
+  }
+  .skillList {
+    font-size: 14px;
+    height: 20px;
+  }
+  .projects .projText i {
+    font-size: 25px;
+    margin-top: 10px;
+  }
 }
