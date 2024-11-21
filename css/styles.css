@@ -353,7 +353,7 @@ nav .contactBtn:hover {
   .projects {
     height: 2500px;
   }
-  .projectCard {
+  .projects .projectCard {
     flex-direction: column;
   }
 }
