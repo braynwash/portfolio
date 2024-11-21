@@ -132,6 +132,10 @@ section {
   .content {
     width: 90%;
   }
+  #backToTopBtn {
+    font-size: 14px;
+    padding: 20px 21px;
+  }
 }
 nav {
   height: 100px;
@@ -248,11 +252,11 @@ nav .contactBtn:hover {
   margin-left: 3%;
 }
 
-.projHeader {
+.cardHeader {
   font-size: 30px;
 }
 
-.projInfo {
+.cardInfo {
   font-size: 20px;
 }
 
@@ -324,11 +328,11 @@ nav .contactBtn:hover {
     height: auto;
     margin-bottom: 75px;
   }
-  .projHeader {
+  .cardHeader {
     font-size: 25px;
     margin-bottom: 10px;
   }
-  .projInfo {
+  .cardInfo {
     font-size: 18px;
   }
   .projects .projImg {
@@ -345,6 +349,7 @@ nav .contactBtn:hover {
     margin-top: 10px;
   }
 }
+/* Base layout */
 .about {
   display: flex;
   align-items: center;
@@ -368,6 +373,7 @@ nav .contactBtn:hover {
 .about .aboutText i {
   color: rgb(179, 30, 30);
   font-size: 27px;
+  margin-right: 20px;
   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -378,8 +384,7 @@ nav .contactBtn:hover {
 
 .about .aboutText .accountLinks {
   display: flex;
-  justify-content: space-between;
-  width: 110px;
+  justify-content: flex-start;
 }
 
 .about .aboutImg {
@@ -396,6 +401,29 @@ nav .contactBtn:hover {
   transform: scale(1.05);
 }
 
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .about .aboutContain {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .about .aboutText {
+    width: 90%;
+    margin: 30px 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about .aboutImg {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 4/3;
+  }
+  .about .aboutText .accountLinks {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
 .contact {
   min-height: 900px;
   display: flex;

@@ -1,3 +1,4 @@
+/* Base layout */
 .about {
   display: flex;
   align-items: center;
@@ -21,6 +22,7 @@
 .about .aboutText i {
   color: $Red;
   font-size: 27px;
+  margin-right: 20px;
   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -31,8 +33,7 @@
 
 .about .aboutText .accountLinks {
   display: flex;
-  justify-content: space-between;
-  width: 110px;
+  justify-content: flex-start;
 }
 
 .about .aboutImg {
@@ -47,4 +48,28 @@
 
 .about .aboutImg:hover {
   transform: scale(1.05);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .about .aboutContain {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .about .aboutText {
+    width: 90%;
+    margin: 30px 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about .aboutImg {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .about .aboutText .accountLinks {
+    margin-top: 15px;
+    justify-content: center;
+  }
 }
