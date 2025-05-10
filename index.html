@@ -20,7 +20,7 @@
          <div class="navLinks">
            <a href="#projects">Projects</a>
             <a href="#about">About</a>
-            <a href="/assets/Resume - Jeremy Black.pdf" target="_blank">Resume</a>
+            <a href="https://docs.google.com/document/d/1ianTf9c1ji_EnLjLx6kXZ_BsJeeeQgz2VM5rlutJhXM/edit?usp=sharing" target="_blank">Resume</a>
             <a href="#contact" class="contactBtn">Connect</a> 
          </div>
       </nav>
@@ -34,10 +34,9 @@
       
    </section>
 
+   <h1 id="projHeader">My Projects</h1> 
+
    <section class="projects" id="projects">
-
-      <h1 class="header">My Projects</h1>
-
       <!-- Keurig -->
       <div class="projectCard">
          <div class="projImg hover" id="keurig"></div>
@@ -50,62 +49,74 @@
                <p>JSON</p>
                <p>Firebase Auth</p>
             </div>
+            <div class="iconList">
+               <i class="fa-regular fa-file-lines"></i>
                <a href="https://braynwash.github.io/N315/final/dist/" target="_blank"><i class="fa-solid fa-link"></i></a>
                <a href="https://github.com/braynwash/N315/tree/main/final" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+               
+         </div>
+      </div>
+
+      <!-- MARLA -->
+      <div class="projectCard">
+         <div class="projImg hover" id="marla"></div>
+         <div class="projText">
+            <h1 class="cardHeader">MARLA Website</h1>
+            <p class="cardInfo">A fully responsive multi-page proof-of-concept website for the Media Arts Research and Learning Arcade (MARLA) in IU Indianapolis that educates students on the space as well as the importance of video game and interactive media preservation.</p> 
+            <div class="skillList">
+               <p>Svelte</p>
+               <p>Figma</p>
+               <p>Client work</p>
+            </div>
+            <div class="iconList">
+               <i class="fa-regular fa-file-lines"></i>
+               <a href="https://marla-iu.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+               <a href="https://github.com/braynwash/marla-website" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
          </div>
       </div>
 
       <!-- Nuvema -->
       <div class="projectCard">
-         <div class="resize" id=""></div> <!-- Where the img for "#nuvema" will go when the screen hits 768px -->
-         <div class="projText" style="text-align: right;margin-right: 3%;">
+         <div class="projImg hover" id="nuvema"></div> 
+         <div class="projText">
             <h1 class="cardHeader">Nuvema Labs</h1>
             <p class="cardInfo">A Pokemon Black/White database made in collaboration with two others. Utilizes Object-Oriented PHP principles and allows users to create an account, save Pokemon to a "favorites" list, and add a custom Pokemon to the database.</p>
-            <div class="projRight">
+         
                <div class="skillList" >
                <p>PHP</p>
                <p>MySQL</p>
                <p>Apache</p>
-            </div>
-            </div>
-            <a href="https://github.com/braynwash/nuvema-labs" target="_blank"><i class="fa-brands fa-github"></i></a>
-         </div>
-         <div class="projImg hover" id="nuvema"></div> <!-- To be removed when screen hits 768px-->
-      </div>
-
-      <!-- Greenwise -->
-      <div class="projectCard">
-         <div class="projImg hover" id="greenwise"></div>
-         <div class="projText">
-            <h1 class="cardHeader">Greenwise Lawn Care</h1>
-            <p class="cardInfo">A UI design made in Figma for a fictional lawn care company. Developed wireframes and conducted usability tests on users, documenting and adjusting the design based on feedback.</p> 
-            <div class="skillList" style="width: 300px;">
-               <p>User research</p>
-               <p>Wireframing</p>
-               <p>Figma</p>
+               </div>
+            
+            <div class="iconList" style="width: 70px;">
+               <i class="fa-regular fa-file-lines"></i>
+               <a href="https://github.com/braynwash/nuvema-labs" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
          </div>
       </div>
 
       <!-- Jungle -->
       <div class="projectCard">
-         <div class="resize" id=""></div> <!-- Where the img for "#jungle" will go when the screen hits 768px -->
-         <div class="projText" style="text-align: right;margin-right: 3%;">
+         <div class="projImg hover" id="jungle"></div> 
+         <div class="projText">
             <h1 class="cardHeader">JungleCook</h1>
             <p class="cardInfo">A multi-page CRUD web application that allows verified users to create, edit, delete and save custom recipes. Uses Firebase to authenticate users and save sessions.</p>
-            <div class="projRight">
-               <div class="skillList" >
+
+            <div class="skillList" >
                <p>jQuery</p>
                <p>Sass</p>
                <p>Firebase Auth</p>
             </div>
+            
+            <div class="iconList">
+               <i class="fa-regular fa-file-lines"></i>
+               <a href="https://braynwash.github.io/N315/homework8/dist/" target="_blank"><i class="fa-solid fa-link"></i></a>
+               <a href="https://github.com/braynwash/N315/tree/main/homework8" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="https://braynwash.github.io/N315/homework8/dist/" target="_blank"><i class="fa-solid fa-link"></i></a>
-            <a href="https://github.com/braynwash/N315/tree/main/homework8" target="_blank"><i class="fa-brands fa-github"></i></a>
          </div>
-         <div class="projImg hover" id="jungle"></div> <!-- To be removed when screen hits 768px-->
       </div>
-
    </section>
 
    <section class="about" id="about">
@@ -132,18 +143,20 @@
       <h1 class="header">Let's Connect!</h1>
 
       <div class="formContainer">
-         <form action="https://formspree.io/f/xovagyyp" method="POST">
+         <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="8af3e8f1-add3-4739-9f47-bde432a02e7f">
 
             <label for="name">Full Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
             <p id="nameError"></p>
 
             <label for="name">E-mail</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <p id="emailError"></p>
 
             <label for="msg">Message</label>
-            <textarea name="msg" id="msg"></textarea>
+            <textarea name="msg" id="msg" required></textarea>
             <p id="msgError"></p>
 
             <div class="submitCenter">

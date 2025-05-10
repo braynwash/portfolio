@@ -33,7 +33,7 @@ html {
 .content {
   width: 75%;
   opacity: 0;
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease-in;
 }
 
 .content.fade-in {
@@ -226,30 +226,36 @@ nav .contactBtn:hover {
 }
 .projects {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  flex-direction: column;
-  height: 1500px;
+  justify-content: space-around;
+  min-height: 1300px;
   font-family: "Montserrat";
+}
+
+#projHeader {
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .header {
   font-size: 35px;
   text-decoration: underline;
   margin-top: 25px;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 
 .projects .projectCard {
-  display: flex;
   align-items: center;
-  width: 100%;
-  height: 275px;
-  margin-bottom: 75px;
+  height: 550px;
+  width: 40%;
 }
 
 .projects .projText {
-  width: 55%;
-  margin-left: 3%;
+  width: 100%;
 }
 
 .cardHeader {
@@ -273,24 +279,16 @@ nav .contactBtn:hover {
 
 .projects .projImg {
   background-color: rgb(179, 30, 30);
-  height: 100%;
-  width: 45%;
+  width: 100%;
+  height: 245px;
   background-position: center;
   background-size: cover;
   border: 5px solid rgb(179, 30, 30);
+  margin-bottom: 25px;
 }
 
 .projects h1 {
   font-family: "Montserrat Bold";
-}
-
-.projRight {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.projects .fa-github {
-  margin-left: 10px;
 }
 
 .projects .skillList {
@@ -298,6 +296,12 @@ nav .contactBtn:hover {
   width: 250px;
   justify-content: space-between;
   color: rgb(130, 130, 130);
+}
+
+.iconList {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
 }
 
 #keurig {
@@ -308,8 +312,8 @@ nav .contactBtn:hover {
   background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/nuvema.png);
 }
 
-#greenwise {
-  background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/greenwise.jpg);
+#marla {
+  background-image: linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)), url(../assets/images/marla.png);
 }
 
 #jungle {
@@ -472,7 +476,7 @@ nav .contactBtn:hover {
 }
 
 .formContainer form p {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   color: red;
 }
 
