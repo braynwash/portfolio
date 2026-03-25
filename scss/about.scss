@@ -1,0 +1,75 @@
+/* Base layout */
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: $M;
+}
+
+.about .aboutContain {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 350px;
+  margin-bottom: 75px;
+}
+
+.about .aboutText {
+  width: 65%;
+  margin-left: 5%;
+}
+
+.about .aboutText i {
+  color: $Red;
+  font-size: 27px;
+  margin-right: 20px;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.about .aboutText i:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.about .aboutText .accountLinks {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about .aboutImg {
+  height: 100%;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid $Red;
+  background-image: url(../assets/images/jeremy.jpg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.about .aboutImg:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .about .aboutContain {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .about .aboutText {
+    width: 90%;
+    margin: 30px 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about .aboutImg {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .about .aboutText .accountLinks {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}

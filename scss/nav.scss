@@ -1,0 +1,57 @@
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: $Red;
+  transform: scale(1.1);
+}
+
+nav .navLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+nav .contactBtn {
+  background-color: $Red;
+  padding: 8px;
+  margin-top: -8px;
+  border-radius: 25px;
+}
+
+nav .contactBtn:hover {
+  background-color: white;
+}
+
+@media (max-width: 1200px) {
+  nav .navLinks {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .navLinks {
+    width: 80%;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 14px;
+  }
+}

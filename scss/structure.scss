@@ -1,0 +1,148 @@
+// Page reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $BG;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: $M;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  width: 75%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.content.fade-in {
+  opacity: 1;
+}
+
+section {
+  min-height: 50%;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#backToTopBtn {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 24px 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: $Red;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+#backToTopBtn.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#backToTopBtn:hover {
+  background-color: #fff;
+  color: $Red;
+}
+
+.hover {
+  position: relative; /* Ensures proper positioning for overlays */
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+  display: inline-block;
+  overflow: hidden; /* Prevents the gradient from going outside the image bounds */
+}
+
+.hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 1; /* Sits above the image but behind text if any */
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none; /* Ensures the gradient doesn’t block hover events */
+}
+
+.hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: filter 0.2s ease-in-out;
+}
+
+.hover:hover {
+  transform: scale(1.05);
+}
+
+.hover:hover::before {
+  opacity: 0; /* Removes the gradient effect when hovering */
+}
+
+.hover:hover img {
+  filter: brightness(1.2); /* Lightens the image */
+}
+
+.red {
+  color: $Red;
+}
+
+// Fonts
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../css/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../css/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url(../css/fonts/Montserrat-Thin.ttf);
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+  #backToTopBtn {
+    font-size: 14px;
+    padding: 20px 21px;
+  }
+}

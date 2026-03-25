@@ -1,0 +1,156 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 1300px;
+  font-family: $M;
+}
+
+#projHeader {
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.header {
+  font-size: 35px;
+  text-decoration: underline;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.projects .projectCard {
+  align-items: center;
+  height: 550px;
+
+  width: 40%;
+}
+
+.projects .projText {
+  width: 100%;
+}
+
+.cardHeader {
+  font-size: 30px;
+}
+
+.cardInfo {
+  font-size: 20px;
+}
+
+.projects .projText i {
+  color: $Red;
+  font-size: 27px;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.projects .projText i:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.projects .projImg {
+  background-color: $Red;
+  width: 100%;
+  height: 245px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid $Red;
+  margin-bottom: 25px;
+}
+
+.projects h1 {
+  font-family: $MB;
+}
+
+.projects .skillList {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  color: rgb(130, 130, 130);
+  cursor: default;
+}
+
+.iconList {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+}
+
+#keurig {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/keurig.png);
+}
+
+#nuvema {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/nuvema.png);
+}
+
+#marla {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/marla.png);
+}
+
+#jungle {
+  background-image: linear-gradient(
+      rgba(78, 78, 78, 0.313),
+      rgba(78, 78, 78, 0.313)
+    ),
+    url(../assets/images/jungle.png);
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 30px;
+  }
+  .projects {
+    height: 1700px;
+  }
+  .projects .projectCard {
+    align-items: center;
+    height: auto;
+    margin-bottom: 75px;
+  }
+  .cardHeader {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .cardInfo {
+    font-size: 18px;
+  }
+  .projects .projImg {
+    width: 90%;
+    height: 300px;
+    border-width: 3px;
+  }
+  .skillList {
+    font-size: 14px;
+    height: 20px;
+  }
+  .projects .projText i {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    height: 2500px;
+  }
+  .projects .projectCard {
+    flex-direction: column;
+  }
+}
