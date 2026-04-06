@@ -44,7 +44,9 @@
 .projects .projText i {
   color: $Red;
   font-size: 27px;
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 
 .projects .projText i:hover {
@@ -80,35 +82,27 @@
   width: 125px;
 }
 
-#keurig {
-  background-image: linear-gradient(
-      rgba(78, 78, 78, 0.313),
-      rgba(78, 78, 78, 0.313)
-    ),
-    url(../assets/images/keurig.png);
+#eventsea {
+  background-image:
+    linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)),
+    url(../assets/images/eventsea.png);
 }
 
 #nuvema {
-  background-image: linear-gradient(
-      rgba(78, 78, 78, 0.313),
-      rgba(78, 78, 78, 0.313)
-    ),
+  background-image:
+    linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)),
     url(../assets/images/nuvema.png);
 }
 
 #marla {
-  background-image: linear-gradient(
-      rgba(78, 78, 78, 0.313),
-      rgba(78, 78, 78, 0.313)
-    ),
+  background-image:
+    linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)),
     url(../assets/images/marla.png);
 }
 
 #jungle {
-  background-image: linear-gradient(
-      rgba(78, 78, 78, 0.313),
-      rgba(78, 78, 78, 0.313)
-    ),
+  background-image:
+    linear-gradient(rgba(78, 78, 78, 0.313), rgba(78, 78, 78, 0.313)),
     url(../assets/images/jungle.png);
 }
 
